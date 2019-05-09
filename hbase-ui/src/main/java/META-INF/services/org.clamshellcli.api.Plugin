@@ -1,0 +1,12 @@
+com.hbase.cli.prompt.HBaseCLIPrompt
+com.hbase.cli.splashscreen.HBaseCLISplashScreen
+com.hbase.cli.controller.HBaseCLIController
+com.hbase.cli.shell.HBaseCLIShell
+com.hbase.cli.shell.HBaseCliConsole
+com.hbase.cli.commands.ListCommand
+com.hbase.cli.commands.ScanCommand
+com.hbase.cli.commands.DescribeCommand
+com.hbase.cli.commands.DeleteCommand
+com.hbase.cli.commands.ShowFilterCommand
+com.hbase.cli.commands.HelpCommand
+com.hbase.cli.commands.ExitCommand

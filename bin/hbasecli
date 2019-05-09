@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -e "$(date):" "Starting HBASE CLI...." >> $CLI_LOG_FILE
+java $java_opt -classpath /opt/hbase/conf/:/opt/hadoop/lib/*:/opt/hbase/lib/*:$CLAMSHELL_DIR/clilib/*:$CLAMSHELL_DIR/lib/*:$CLAMSHELL_DIR/cli.jar:$HBASE_CLI_DIR/lib/*:$HBASE_CLI_DIR/codec-lib/* cli.Run 2>>$CLI_LOG_FILE 
+echo -e "$(date):" "Stopping HBASE CLI...." >> $CLI_LOG_FILE

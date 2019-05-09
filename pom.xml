@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+	<groupId>com.tools</groupId>
+	<artifactId>hbase-cli</artifactId>
+	<packaging>pom</packaging>
+	<name>hbase-cli</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+     <modules>
+	 	<module>hbase-ui</module>
+	 	<module>hbase-cli-core</module>
+	 	<module>hbase-cli-api</module>
+	 </modules>
+    <dependencies>
+		<dependency>
+			<groupId>org.clamshellcli</groupId>
+			<artifactId>clamshell-api</artifactId>
+			<version>${clamshell.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.clamshellcli.core</groupId>
+			<artifactId>clamshell-core</artifactId>
+		</dependency>
+		<dependency> 
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jline</groupId>
+			<artifactId>jline</artifactId>
+			<version>1.0</version>
+		</dependency>
+		 <dependency>
+		    <groupId>com.utils</groupId>
+	        <artifactId>blu</artifactId>
+	       <version>${platform.version}</version>
+	    </dependency> 
+	    <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+        </dependency>
+
+	</dependencies>
+</project>
